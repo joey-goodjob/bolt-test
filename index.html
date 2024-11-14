@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东方玄机 - 专业运势分析平台</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="main.js" type="module"></script>
+</head>
+<body class="bg-primary-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-primary-900">东方玄机</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-primary-700 hover:text-primary-900">特色功能</a>
+                    <a href="#how-it-works" class="text-primary-700 hover:text-primary-900">使用方法</a>
+                    <a href="#pricing" class="text-primary-700 hover:text-primary-900">服务价格</a>
+                    <a href="#faq" class="text-primary-700 hover:text-primary-900">常见问题</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-primary-100 to-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-primary-900 mb-6">探索你的命运密码</h1>
+            <p class="text-xl text-primary-700 mb-12">融合东方玄学与西方占星，为您提供专业的运势分析</p>
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+                <form id="fortuneForm" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" placeholder="请输入您的姓名" required
+                            class="fortune-input">
+                    </div>
+                    <div>
+                        <input type="date" id="birthdate" required
+                            class="fortune-input">
+                    </div>
+                    <button type="submit" class="btn-primary">开始分析</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary-900 mb-12">专业解析系统</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-3xl mb-4">🏮</div>
+                    <h3 class="text-xl font-semibold mb-4">紫微斗数</h3>
+                    <p class="text-primary-700">结合古老的紫微斗数理论，精准分析您的人生格局</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-4">⭐</div>
+                    <h3 class="text-xl font-semibold mb-4">西方星座</h3>
+                    <p class="text-primary-700">融合现代占星学理论，全方位解读星盘信息</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-4">☯️</div>
+                    <h3 class="text-xl font-semibold mb-4">易经八卦</h3>
+                    <p class="text-primary-700">运用传统易经智慧，揭示命运走向</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-20 bg-primary-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary-900 mb-12">使用流程</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-2xl mb-4">1️⃣</div>
+                    <h3 class="font-semibold mb-2">输入信息</h3>
+                    <p class="text-primary-700">填写基本个人信息</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl mb-4">2️⃣</div>
+                    <h3 class="font-semibold mb-2">智能分析</h3>
+                    <p class="text-primary-700">系统进行深度运算</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl mb-4">3️⃣</div>
+                    <h3 class="font-semibold mb-2">生成报告</h3>
+                    <p class="text-primary-700">获取详细运势报告</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl mb-4">4️⃣</div>
+                    <h3 class="font-semibold mb-2">专家解读</h3>
+                    <p class="text-primary-700">可选择专家深度解析</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary-900 mb-12">服务价格</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">基础版</h3>
+                    <p class="text-3xl font-bold mb-6">¥68<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li>✓ 基础运势分析</li>
+                        <li>✓ 今日吉凶提醒</li>
+                        <li>✓ PDF报告导出</li>
+                    </ul>
+                    <button class="btn-primary w-full">立即开始</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-primary-500">
+                    <h3 class="text-2xl font-bold mb-4">专业版</h3>
+                    <p class="text-3xl font-bold mb-6">¥168<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li>✓ 详细运势分析</li>
+                        <li>✓ 未来三个月预测</li>
+                        <li>✓ 视频解说服务</li>
+                        <li>✓ 专家在线答疑</li>
+                    </ul>
+                    <button class="btn-primary w-full">立即开始</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">尊享版</h3>
+                    <p class="text-3xl font-bold mb-6">¥368<span class="text-base font-normal">/次</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li>✓ 全年运势预测</li>
+                        <li>✓ 一对一专家解读</li>
+                        <li>✓ 终身运势图谱</li>
+                        <li>✓ 贵人相助分析</li>
+                    </ul>
+                    <button class="btn-primary w-full">立即开始</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-primary-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary-900 mb-12">常见问题</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold mb-2">运势分析的准确度如何？</h3>
+                    <p class="text-primary-700">我们采用中西结合的专业分析系统，准确度在业内处于领先水平。通过大数据分析和传统玄学相结合，为您提供科学且可靠的运势预测。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold mb-2">如何保护我的个人信息？</h3>
+                    <p class="text-primary-700">我们采用银行级别的加密技术保护您的个人信息，所有数据都经过严格加密处理，确保您的隐私安全。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-semibold mb-2">可以退款吗？</h3>
+                    <p class="text-primary-700">我们提供7天内无理由退款服务，如果您对服务不满意，可以联系客服申请退款。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">东方玄机</h3>
+                    <p class="text-primary-400">专业的运势分析平台</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                    <p class="text-primary-400">邮箱：bourneliu66@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-primary-400 hover:text-white">特色功能</a></li>
+                        <li><a href="#pricing" class="text-primary-400 hover:text-white">服务价格</a></li>
+                        <li><a href="#faq" class="text-primary-400 hover:text-white">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">关注我们</h3>
+                    <p class="text-primary-400">微信公众号：东方玄机</p>
+                </div>
+            </div>
+            <div class="border-t border-primary-800 mt-8 pt-8 text-center">
+                <p class="text-primary-400">© 2024 东方玄机 版权所有 | 刘小排</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
